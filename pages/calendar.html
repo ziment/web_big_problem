@@ -37,33 +37,33 @@
                 <section class="section">
                     <h2 class="section__title">Конструктор расписания</h2>
 
-                    <form id="schedule-form" class="constructor__form">
-                        <label class="constructor__label">
+                    <form id="calendar-form" class="form">
+                        <label class="form__label">
                             Название контеста:
-                            <input type="text" id="contest-name" name="contestName" class="constructor__input" required>
+                            <input type="text" id="contest-name" name="contestName" class="form__input" required>
                         </label>
-                        <label class="constructor__label">
+                        <label class="form__label">
                             Дата начала:
-                            <input type="date" id="date-start" name="startDate" class="constructor__input" required>
+                            <input type="date" id="date-start" name="startDate" class="form__input" required>
                         </label>
-                        <label class="constructor__label">
+                        <label class="form__label">
                             Дата окончания:
-                            <input type="date" id="date-end" name="endDate" class="constructor__input" required>
+                            <input type="date" id="date-end" name="endDate" class="form__input" required>
                         </label>
-                        <button class="button" type="submit" class="btn constructor__btn">Добавить контест</button>
+                        <button class="button" type="submit">Добавить контест</button>
                     </form>
 
-                    <div id="table-container" class="table-container">
-                        <table class="generated-table">
-                            <thead class="generated-table__head">
-                                <tr class="generated-table__row">
-                                    <th class="generated-table__header">Контест</th>
-                                    <th class="generated-table__header">Дата начала</th>
-                                    <th class="generated-table__header">Дата окончания</th>
-                                    <th class="generated-table__header">Действия</th>
+                    <div id="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Контест</th>
+                                    <th>Дата начала</th>
+                                    <th>Дата окончания</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
-                            <tbody id="table-body" class="generated-table__body"></tbody>
+                            <tbody id="table-body"></tbody>
                         </table>
                     </div>
                 </section>

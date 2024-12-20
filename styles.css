@@ -279,7 +279,7 @@ tr:nth-child(even) {
     justify-content: flex-end;
 }
 
-.vex .vex-dialog-button {
+.vex .vex-dialog-button, .button {
     border-radius: 3px;
     border: 0;
     text-transform: uppercase;
@@ -293,5 +293,9 @@ tr:nth-child(even) {
     font-family: var(--font-monospace);
     font-weight: bold;
     text-align: center;
+}
+
+.button {
+    margin: 0.5rem 0;
 }
 

@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("schedule-form");
+    const form = document.getElementById("calendar-form");
     const tableBody = document.getElementById("table-body");
     const STORAGE_KEY = "bigproblemCal";
 
-    function loadData() {
+    function load() {
         const data = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
         data.forEach(item => addRow(item));
     };
 
-    function saveData() {
+    function save() {
         const rows = Array.from(tableBody.querySelectorAll("tr")).map((row) => {
             return {
                 contestName: row.cells[0].textContent,
@@ -31,22 +31,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const endCell = document.createElement("td");
         endCell.textContent = dateEnd;
 
-        const actionsCell = document.createElement("td");
+        const buttonCell = document.createElement("td");
 
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Удалить";
         deleteButton.classList.add("button");
         deleteButton.addEventListener("click", () => {
             row.remove();
-            saveData();
+            save();
         });
 
-        actionsCell.appendChild(deleteButton);
+        buttonCell.appendChild(deleteButton);
 
         row.appendChild(nameCell);
         row.appendChild(startCell);
         row.appendChild(endCell);
-        row.appendChild(actionsCell);
+        row.appendChild(buttonCell);
 
         tableBody.appendChild(row);
     };
@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const newData = { contestName, dateStart, dateEnd };
         addRow(newData);
 
-        saveData();
+        save();
 
         form.reset();
     });
 
-    loadData();
+    load();
 });

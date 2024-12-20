@@ -1,5 +1,5 @@
 (function () {
-    window.addEventListener("load", function () {
+    window.addEventListener("load", () => {
         const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
         const footer = document.getElementById("footer");
 
@@ -9,7 +9,7 @@
             loadText.classList = "footer__text";
             footer.appendChild(loadText);
         } else {
-            console.warn("Footer element not found.");
+            console.warn("Footer element not found");
         }
 
         const path = document.location.pathname.split("/").pop();

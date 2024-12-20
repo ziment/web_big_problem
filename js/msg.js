@@ -30,15 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then((data) => {
-            const numberOfMessages = Math.floor(Math.random() * data.length) + 1;
+            const messageCount = Math.floor(Math.random() * data.length) + 1;
             const shuffledMessages = data.sort(() => 0.5 - Math.random());
-            const selectedMessages = shuffledMessages.slice(0, numberOfMessages);
+            const messages = shuffledMessages.slice(0, messageCount);
 
-            renderMessages(selectedMessages);
+            renderMessages(messages);
             preloader.style.display = "none";
         })
         .catch((err) => {
             preloader.style.display = "none";
-            error.textContent = `Ошибка: ${err.message}`;
+            error.textContent = `${err.message}`;
         });
 });
