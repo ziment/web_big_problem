@@ -140,6 +140,10 @@ pre {
     color: var(--fg);
 }
 
+.nav__link--active {
+    text-decoration: underline;
+}
+
 .nav__link:hover {
     color: var(--fg3);
 }
