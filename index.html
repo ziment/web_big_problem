@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Big Problem, программирование, соревнования, задачи, алгоритмы">
     <meta name="description" content="Codeforces, но хуже">
-    <title>Big Problem - Клон</title>
+    <title>Big Problem</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h1>Big Problem</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Соревнования</a></li>
-                <li><a href="#">Задачи</a></li>
-                <li><a href="#">Участники</a></li>
+    <header class="header">
+        <img class="header__logo" src="./img/logo_uglycoal.png" alt="Logo">
+        <h1 class="header__title">Big Problem</h1>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Соревнования</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Задачи</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Участники</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>О платформе</h2>
-            <p>Big Problem - это платформа для проведения <strong>соревнований</strong> по программированию, 
-               а также для <em>решения</em> алгоритмических задач.</p>
+    <main class="main">
+        <section class="section">
+            <h2 class="section__title">О платформе</h2>
+            <p class="section__text">
+                Big Problem - это платформа для проведения <strong>соревнований</strong> попрограммированию, а также для
+                <em>решения</em> алгоритмических задач.
+            </p>
         </section>
 
-        <section>
-            <h2>Недавние соревнования</h2>
+        <section class="section">
+            <h2 class="section__title">Недавние соревнования</h2>
             <ol>
                 <li>Big Problem Round #1000</li>
                 <li>Big Problem Global Round 18</li>
@@ -35,48 +41,51 @@
             </ol>
         </section>
 
-        <aside>
-            <h3>Совет дня</h3>
-            <p>"<i>Не откладывай решение сложных задач на потом!</i>"</p>
+        <aside class="aside">
+            <h3 class="aside__title">Совет дня</h3>
+            <p class="aside__text">"<i>Не откладывай решение сложных задач на потом!</i>"</p>
         </aside>
 
-        <article>
-            <h2>Пример кода</h2>
-            <pre>
-                <code>
-#include &lt;iostream&gt;
+        <article class="article">
+            <h2 class="article__title">Пример кода</h2>
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Egestas at in posuere quisque conubia ac interdum netus
+            sit. Dui habitant scelerisque fringilla sed nisl suscipit accumsan pellentesque. Curae interdum adipiscing
+            dapibus dolor tortor; platea etiam. Placerat cubilia suspendisse tellus adipiscing; nisl lacus sed euismod.
+            Himenaeos lectus diam aliquam molestie conubia nascetur hac. At torquent pellentesque taciti pretium quis
+            ridiculus. Purus volutpat vehicula fames vulputate tellus urna. Duis nam efficitur potenti volutpat nisl
+            suscipit morbi magna. Eget laoreet bibendum primis lacinia, egestas ultrices mus quam.
+
+            <pre class="code"><code>#include &lt;iostream&gt;
 using namespace std;
 
 int main() {
     cout << "Hello, Big Problem!" << endl;
     return 0;
-}
-                </code>
-            </pre>
+}</code></pre>
         </article>
 
-        <section>
-            <h2>ASCII-арт</h2>
-            <pre>
+        <section class="section">
+            <h2 class="section__title">ASCII-арт</h2>
+            <pre class="ascii-art">
  XX    X  DDDDD   DDDDD  
   XX  X   D    D  D    D 
-    X     D     D D     D
+    X     D     D D     D   
   X  XX   D    D  D    D 
- X    XX  DDDDD   DDDDD  
-            </pre>
+ X    XX  DDDDD   DDDDD  </pre>
         </section>
 
-        <section>
-            <h2>Цитата и формула успеха</h2>
-            <blockquote>
+        <section class="section">
+            <h2 class="section__title">Цитата и формула успеха</h2>
+            <blockquote class="quote">
                 "Успех приходит к тем, кто настойчив и трудолюбив."<br>
                 Формула успеха: <strong>успех = труд<sub>настойчивость</sub> + опыт<sup>знания</sup></strong>
             </blockquote>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Big Problem. Все права защищены.</p>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Big Problem. Все права защищены.</p>
     </footer>
 </body>
+
 </html>

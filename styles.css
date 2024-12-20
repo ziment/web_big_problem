@@ -1,0 +1,145 @@
+:root {
+    --bg: var(--bg0);
+    --bg0: #fbf1c7;
+    --bg0_h: #f9f5d7;
+    --bg0_s: #f2e5bc;
+    --bg1: #ebdbb2;
+    --bg2: #d5c4a1;
+    --bg3: #bdae93;
+    --bg4: #a89984;
+    --fg: var(--fg1);
+    --fg0: #282828;
+    --fg1: #3c3836;
+    --fg2: #504945;
+    --fg3: #665c54;
+    --fg4: #7c6f64;
+    --gray1: var(--fg4);
+    --gray2: #928374;
+    --red1: #cc241d;
+    --red2: #9d0006;
+    --green1: #98971a;
+    --green2: #797403;
+    --yellow1: #d79921;
+    --yellow2: #b57614;
+    --blue1: #458588;
+    --blue2: #076678;
+    --purple1: #b16286;
+    --purple2: #8f3f71;
+    --aqua1: #689d6a;
+    --aqua2: #427b58;
+    --orange1: #d65d0e;
+    --orange2: #af3a03
+}
+
+:root {
+    --primary: var(--blue1);
+    --primary-alt: var(--blue2);
+    --font-monospace: "Fira Code", "Lucida Console", Monaco, monospace;
+    --font-sans-serif: Verdana, Helvetica, sans-serif;
+    --font-serif: "Roboto Slab", Georgia, serif
+}
+
+::selection {
+    background: var(--bg4);
+    color: var(--fg0)
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    line-height: 1.675;
+    word-wrap: break-word;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-serif);
+}
+
+pre {
+    overflow: auto;
+}
+
+.main {
+    margin: .5em 1.1em;
+}
+
+.header {
+    font-family: var(--font-monospace);
+    font-size: 1.125rem;
+    background-color: var(--bg1);
+    padding: 1rem;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__title {
+    margin: .65em 0;
+    color: var(--fg0);
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--fg);
+}
+
+.nav__link:hover {
+    color: var(--fg3);
+}
+
+.section {
+    padding: 1rem;
+    border: 1px solid var(--gray2);
+    margin: 1rem 0;
+    background-color: var(--bg0_s);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section__title {
+    margin: .5em 0;
+    color: var(--fg0);
+}
+
+.aside__title {
+    margin: .5em 0;
+    color: var(--fg0);
+}
+
+.code,
+.ascii-art {
+    font-family: var(--font-monospace);
+    background-color: var(--bg2);
+    color: var(--fg);
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.code code {
+    font: inherit
+}
+
+.footer {
+    padding-bottom: .5rem;
+    padding-top: 2rem;
+}
+
+.footer__text {
+    color: var(--fg3);
+    font-size: .8rem;
+    text-align: center;
+}
