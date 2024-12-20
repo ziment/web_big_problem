@@ -21,26 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function addRow({ contestName, dateStart, dateEnd }) {
         const row = document.createElement("tr");
-        row.classList.add("generated-table__row");
 
         const nameCell = document.createElement("td");
         nameCell.textContent = contestName;
-        nameCell.classList.add("generated-table__cell");
 
         const startCell = document.createElement("td");
         startCell.textContent = dateStart;
-        startCell.classList.add("generated-table__cell");
 
         const endCell = document.createElement("td");
         endCell.textContent = dateEnd;
-        endCell.classList.add("generated-table__cell");
 
         const actionsCell = document.createElement("td");
-        actionsCell.classList.add("generated-table__cell");
 
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Удалить";
-        deleteButton.classList.add("btn", "delete");
+        deleteButton.classList.add("button");
         deleteButton.addEventListener("click", () => {
             row.remove();
             saveData();
@@ -62,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const contestName = document.getElementById("contest-name").value;
         const dateStart = document.getElementById("date-start").value;
         const dateEnd = document.getElementById("date-end").value;
+
+        vex.dialog.alert("Контест успешно добавлен");
 
         const newData = { contestName, dateStart, dateEnd };
         addRow(newData);

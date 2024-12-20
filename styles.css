@@ -201,6 +201,24 @@ pre {
     margin-left: 1rem;
 }
 
+.message {
+    border-left: 5px solid var(--bg2);
+    padding-left: 5px;
+    margin-left: 1rem;
+}
+
+.message__error {
+    border-left: 5px solid var(--red1);
+    padding-left: 5px;
+    margin-left: 1rem;
+}
+
+.message__preloader {
+    border-left: 5px solid var(--orange1);
+    padding-left: 5px;
+    margin-left: 1rem;
+}
+
 .footer {
     padding-bottom: .5rem;
     padding-top: 2rem;
@@ -232,3 +250,48 @@ th {
 tr:nth-child(even) {
     background-color: var(--bg1);
 }
+
+.vex {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.vex .vex-content {
+    border-radius: 3px;
+    border-left: 4px solid var(--green1);
+    background-color: var(--bg0_s);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 450px;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.vex .vex-dialog-message {
+    margin-bottom: 1rem;
+}
+
+.vex .vex-dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vex .vex-dialog-button {
+    border-radius: 3px;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    line-height: 1rem;
+    padding: .5rem 1em;
+
+    background-color: var(--bg2);
+    border-bottom: 2px solid var(--gray1);
+    font-family: var(--font-monospace);
+    font-weight: bold;
+    text-align: center;
+}
+
